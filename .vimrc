@@ -3,30 +3,37 @@
 """"""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 
-" ファイルオープンを便利に
+" ファイルオープン系プラグイン
 Plug 'Shougo/unite.vim'
+Plug 'scrooloose/nerdtree'
 " Unite.vimで最近使ったファイルを表示できるようにする
 Plug 'Shougo/neomru.vim'
+
+" vim拡張系プラグイン
+Plug 'itchyny/lightline.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'rhysd/migemo-search.vim'
+Plug 'tpope/vim-commentary'
+Plug 'Shougo/neocomplete.vim'
+Plug 'glidenote/memolist.vim'
+
+" シンタックス系プラグイン
+Plug 'KeitaNakamura/railscasts.vim'
 Plug 'slim-template/vim-slim'
 Plug 'posva/vim-vue'
 Plug 'tpope/vim-haml'
 Plug 'kchmck/vim-coffee-script'
-Plug 'KeitaNakamura/railscasts.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'rhysd/migemo-search.vim'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'tpope/vim-endwise'
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-rails'
-Plug 'Shougo/neocomplete.vim'
-Plug 'othree/yajs.vim'
 Plug 'othree/es.next.syntax.vim'
+Plug 'vim-scripts/nginx.vim'
+
+" Ruby開発おすすめ系プラグイン
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
+
+Plug 'othree/yajs.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'glidenote/memolist.vim'
 Plug 'heavenshell/vim-jsdoc'
-Plug 'vim-scripts/nginx.vim'
 
 call plug#end()
 """"""""""""""""""""""""""""""
