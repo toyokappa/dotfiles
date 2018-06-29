@@ -65,7 +65,6 @@ let g:lightline = {}
 set laststatus=2
 set ruler
 set number
-set list
 set wildmenu
 set showcmd
 
