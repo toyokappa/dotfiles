@@ -49,8 +49,12 @@ syntax on
 set nowrap
 
 " インデントの可視化
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=6
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=3
 set autoindent
 set shiftwidth=2
 set softtabstop=2
