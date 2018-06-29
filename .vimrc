@@ -26,6 +26,7 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'glidenote/memolist.vim'
 Plug 'heavenshell/vim-jsdoc'
+Plug 'vim-scripts/nginx.vim'
 
 call plug#end()
 """"""""""""""""""""""""""""""
@@ -87,10 +88,14 @@ nmap <C-a> <Esc>^
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 " memolistの設定
+let mapleader = ','
 map <Leader>mn  :MemoNew<CR>
 map <Leader>ml  :MemoList<CR>
 map <Leader>mg  :MemoGrep<CR>
 let g:memolist_path = "~/memolist"
+
+" nginxのシンタックスハイライトコマンド
+map <Leader>nx :set syntax=nginx<CR>
 
 if executable('cmigemo')
   cnoremap <expr><CR> migemosearch#replace_search_word()."\<CR>"
