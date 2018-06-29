@@ -1,54 +1,35 @@
-" Note: Skip initialization for vim-tiny or vim-small.
-if 0 | endif
+""""""""""""""""""""""""""""""
+" プラグインのセットアップ
+""""""""""""""""""""""""""""""
+call plug#begin('~/.vim/plugged')
 
-if &compatible
-  set nocompatible               " Be iMproved
-endif
+" ファイルオープンを便利に
+Plug 'Shougo/unite.vim'
+" Unite.vimで最近使ったファイルを表示できるようにする
+Plug 'Shougo/neomru.vim'
+Plug 'slim-template/vim-slim'
+Plug 'posva/vim-vue'
+Plug 'tpope/vim-haml'
+Plug 'kchmck/vim-coffee-script'
+Plug 'KeitaNakamura/railscasts.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'rhysd/migemo-search.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'tpope/vim-endwise'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-rails'
+Plug 'Shougo/neocomplete.vim'
+Plug 'othree/yajs.vim'
+Plug 'othree/es.next.syntax.vim'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'glidenote/memolist.vim'
+Plug 'heavenshell/vim-jsdoc'
 
-" Required:
-set runtimepath+=~/.vim/bundle/neobundle.vim/
+call plug#end()
+""""""""""""""""""""""""""""""
 
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note: You don't set neobundle setting in .gvimrc!
-
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'posva/vim-vue'
-NeoBundle 'tpope/vim-haml'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'KeitaNakamura/railscasts.vim'
-NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'rhysd/migemo-search.vim'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'othree/yajs.vim'
-NeoBundle 'othree/es.next.syntax.vim'
-NeoBundle 'othree/javascript-libraries-syntax.vim'
-NeoBundle 'maxmellon/vim-jsx-pretty'
-NeoBundle 'glidenote/memolist.vim'
-NeoBundle 'heavenshell/vim-jsdoc'
-
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
-
-" =========================
 " matchitの設定
 source $VIMRUNTIME/macros/matchit.vim
 let b:match_ignorecase = 1
