@@ -30,6 +30,7 @@ Plug 'vim-scripts/nginx.vim'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 
+" JS開発おすすめ系プラグイン
 Plug 'othree/yajs.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'maxmellon/vim-jsx-pretty'
