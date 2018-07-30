@@ -26,6 +26,9 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'othree/es.next.syntax.vim'
 Plug 'vim-scripts/nginx.vim'
 
+" Linter系プラグイン
+Plug 'scrooloose/syntastic'
+
 " Ruby開発おすすめ系プラグイン
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
@@ -202,3 +205,20 @@ function! EnableJavascript()
   let b:javascript_lib_use_d3 = 1
 endfunction
 autocmd MyVimrc FileType javascript,javascript.jsx call EnableJavascript()
+
+" syntasticの設定
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
+let g:syntastic_ruby_checkers = ['rubocop']
+
+let g:syntastic_error_symbol='✗'
+let g:syntastic_style_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
+let g:syntastic_style_warning_symbol = '⚠'
