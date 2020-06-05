@@ -1,5 +1,11 @@
 [[plugins]]
-repo = 'Shougo/neocomplete'
+repo = 'Shougo/neocomplcache.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
 repo = 'Shogo/neomru.vim'
