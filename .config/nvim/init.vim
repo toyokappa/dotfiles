@@ -12,3 +12,10 @@ set shiftwidth=2
 set softtabstop=0
 set expandtab
 set smarttab
+set autoindent
+
+" カーソル系の設定
+set number
+set cursorline
+set whichwrap=b,s,h,l,<,>,[,],~
+set backspace=indent,eol,start
