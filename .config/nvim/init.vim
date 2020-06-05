@@ -3,7 +3,7 @@ if &compatible
   set nocompatible
 endif
 
-let s:dein_dir = expand('~/.cache/dein')
+let s:dein_dir = expand('~/dotfiles/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 if !isdirectory(s:dein_repo_dir)
@@ -15,8 +15,8 @@ if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
   " 管理するプラグインを記述したファイル
-  let s:toml = '~/dotfiles/.dein.toml'
-  let s:lazy_toml = '~/dotfiles/.dein_lazy.toml'
+  let s:toml = '~/dotfiles/.config/nvim/dein/.dein.toml'
+  let s:lazy_toml = '~/dotfiles/.config/nvim/dein/.dein_lazy.toml'
   call dein#load_toml(s:toml, {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
@@ -24,8 +24,8 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 
-if dein#check_install(['vimproc'])
-  call dein#install(['vimproc'])
+if dein#check_install(['vimproc.vim'])
+  call dein#install(['vimproc.vim'])
 endif
 
 if dein#check_install()
