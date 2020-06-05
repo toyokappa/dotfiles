@@ -32,6 +32,12 @@ if dein#check_install()
   call dein#install()
 endif
 
+" 見た目
+colorscheme iceberg
+set t_Co=256
+syntax on
+set nowrap
+
 " 検索/置換系の設定
 set ignorecase
 set smartcase
@@ -47,6 +53,13 @@ set softtabstop=0
 set expandtab
 set smarttab
 set autoindent
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_guide_size = 1
+let g:indent_guides_start_level = 1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=7
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
 
 " カーソル系の設定
 set number
@@ -57,3 +70,4 @@ set backspace=indent,eol,start
 " その他設定
 set mouse=a
 set clipboard+=unnamed
+nnoremap <silent><C-n> :NERDTreeToggle<CR>

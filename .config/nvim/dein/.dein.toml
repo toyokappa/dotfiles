@@ -4,3 +4,9 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
 build = 'make'
+
+[[plugins]] # カラースキーマ
+repo = 'cocopon/iceberg.vim'
+
+[[plugins]] # インデント
+repo = 'nathanaelkane/vim-indent-guides'
