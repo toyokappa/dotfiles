@@ -20,6 +20,6 @@ set cursorline
 set whichwrap=b,s,h,l,<,>,[,],~
 set backspace=indent,eol,start
 
-# その他設定
+" その他設定
 set mouse=a
 set clipboard+=unnamed
