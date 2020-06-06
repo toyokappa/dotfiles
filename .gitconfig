@@ -1,0 +1,13 @@
+[core]
+  pager = less
+  autocrlf = input
+[alias]
+  cm = commit
+  co = checkout
+  br = branch
+  st = status
+[push]
+  default = current
+[user]
+  name = Yuta Toyokawa
+  email = kppg42@gmail.com
