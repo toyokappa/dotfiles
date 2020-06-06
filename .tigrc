@@ -1,0 +1,5 @@
+# キー設定
+bind status + !git commit --amend
+
+# 見た目
+set main-view = id date author commit-title:graph=yes,refs=yes
