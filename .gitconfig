@@ -11,3 +11,5 @@
 [user]
   name = Yuta Toyokawa
   email = kppg42@gmail.com
+[commit]
+  template = ~/dotfiles/.commit_template
