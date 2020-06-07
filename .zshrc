@@ -69,3 +69,6 @@ alias vimconf='vim ~/dotfiles/.config/nvim/init.vim'
 alias zshconf='vim ~/dotfiles/.zshrc'
 
 function chpwd() { ls } # cd後にlsを実行
+
+# nodeの設定
+eval "$(nodenv init -)"
