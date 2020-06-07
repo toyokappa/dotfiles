@@ -40,6 +40,7 @@ setopt correct_all
 
 export LANG=ja_JP.UTF-8
 setopt share_history
+setopt hist_ignore_dups
 HISTFILE=~/dotfiles/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
@@ -60,7 +61,11 @@ setopt auto_list
 unsetopt auto_menu
 
 # エイリアスの設定-----------------
-alias ls='ls -G'
+alias ls='ls -G' # lsで色を付ける
 alias vim='nvim'
-alias vimconf='vim ~/dotfiles/.config/nvim/init.vim'
 alias fig='docker-compose'
+
+alias vimconf='vim ~/dotfiles/.config/nvim/init.vim'
+alias zshconf='vim ~/dotfiles/.zshrc'
+
+function chpwd() { ls } # cd後にlsを実行
