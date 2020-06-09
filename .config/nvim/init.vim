@@ -72,6 +72,7 @@ set mouse=a
 set clipboard+=unnamed
 nnoremap <silent><C-t> :NERDTreeToggle<CR>
 let g:NERDTreeShowHidden = 1
+autocmd QuickFixCmdPost *grep* cwindow
 
 " neocomplcacheの設定
 let g:acp_enableAtStartup = 0

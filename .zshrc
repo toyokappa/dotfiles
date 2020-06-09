@@ -70,5 +70,8 @@ alias zshconf='vim ~/dotfiles/.zshrc'
 
 function chpwd() { ls } # cd後にlsを実行
 
+# rubyの設定
+eval "$(rbenv init -)"
+
 # nodeの設定
 eval "$(nodenv init -)"
