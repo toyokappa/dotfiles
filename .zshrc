@@ -75,3 +75,6 @@ eval "$(rbenv init -)"
 
 # nodeの設定
 eval "$(nodenv init -)"
+
+# direnvの設定
+eval "$(direnv hook zsh)"
