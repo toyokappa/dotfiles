@@ -10,3 +10,23 @@ repo = 'cocopon/iceberg.vim'
 
 [[plugins]] # インデント
 repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]] # terraform
+repo = 'hashivim/vim-terraform'
+
+[[plugins]]
+repo = 'juliosueiras/vim-terraform-compelition'
+
+[[plugins]]
+repo = 'autozimu/LanguageClient-neovim'
+build = 'zsh install.sh'
+rev = 'next'
+hook_add = '''
+  set hidden
+  let g:LanguageClient_serverCommands = {
+      \ 'go': ['gopls']
+      \ }
+  let g:LanguageClient_loadSettings = 1
+  nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+  nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+'''

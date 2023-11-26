@@ -25,3 +25,15 @@ repo = 'tpope/vim-endwise'
 
 [[plugins]]
 repo = 'slim-template/vim-slim'
+on_ft = ['slim']
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_add = '''
+  " 保存時に必要なimportを自動的に挿入
+  let g:go_fmt_command = "goimports"
+  " LSPに任せる機能をOFFにする
+  let g:go_def_mapping_enabled = 0
+  let g:go_doc_keywordprg_enabled = 0
+'''

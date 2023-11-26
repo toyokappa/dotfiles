@@ -63,10 +63,11 @@ unsetopt auto_menu
 # エイリアスの設定-----------------
 alias ls='ls -G' # lsで色を付ける
 alias vim='nvim'
-alias fig='docker-compose'
+alias fig='docker compose'
 
 alias vimconf='vim ~/dotfiles/.config/nvim/init.vim'
 alias zshconf='vim ~/dotfiles/.zshrc'
+alias sshconf='vim ~/.ssh/config'
 
 function chpwd() { ls } # cd後にlsを実行
 
@@ -78,3 +79,8 @@ eval "$(nodenv init -)"
 
 # direnvの設定
 eval "$(direnv hook zsh)"
+
+# pip3系のPATH設定
+export PATH=$PATH:$HOME/Library/Python/3.7/bin
+export PATH=$PATH:$HOME/flutter/bin
+
