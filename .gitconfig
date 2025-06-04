@@ -6,6 +6,7 @@
   co = checkout
   br = branch
   st = status
+  tg = "!sh -c 'TAG_V=$1; git tag $TAG_V; git push origin $TAG_V' -"
 [push]
   default = current
 [user]
