@@ -84,3 +84,5 @@ eval "$(direnv hook zsh)"
 export PATH=$PATH:$HOME/Library/Python/3.7/bin
 export PATH=$PATH:$HOME/flutter/bin
 
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
